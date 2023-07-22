@@ -1,0 +1,21 @@
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-block:1em;
+}
+
+.button {
+    background-color: rgb(11, 141, 11);
+    border-radius: 10px;
+    border: none;
+    width: 8em;
+    padding: 5px;
+    font-size: 25px;
+    font-weight:bold;
+}
+
+.button:hover {
+    border: 3px solid black;
+    background-color:rgb(102, 190, 102);
+}
