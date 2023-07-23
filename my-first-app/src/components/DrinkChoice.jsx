@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const DrinkChoice = ({ drink }) => {
     return (
       <>
@@ -6,4 +8,9 @@ export const DrinkChoice = ({ drink }) => {
             <p>You drink will be ready in a few minutes!</p>
       </>
     );
+};
+
+DrinkChoice.propTypes = {
+  drink: PropTypes.object, 
+
 };
