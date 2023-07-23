@@ -1,5 +1,6 @@
 import './DrinkButtons.css'
 import { Button } from './ui/Button';
+import PropTypes from 'prop-types';
 
 export const DrinkButtons = ( { drinkOne, drinkTwo } ) => {
     return (
@@ -12,3 +13,11 @@ export const DrinkButtons = ( { drinkOne, drinkTwo } ) => {
         </>
     );
 };
+
+DrinkButtons.propTypes = {
+    text: PropTypes.string,
+    drinkOne: PropTypes.object,
+    drinkTwo: PropTypes.object
+};
+
+
