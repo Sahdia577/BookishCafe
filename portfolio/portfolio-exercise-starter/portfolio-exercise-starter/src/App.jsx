@@ -6,7 +6,7 @@ import { PortfolioPage } from './pages/PortfolioPage';
 
 export const App = () => {
   console.log(portfolioItems); 
-  const [selectedItem, setSelectedItem] = useState(portfolioItems[0]);
+  const [selectedItem, setSelectedItem] = useState(portfolioItems[7]);
 
   return <div className="App">
     {selectedItem ? (
