@@ -5,5 +5,5 @@ export const PortfolioItemPage = ({ item }) => {
             <img src={item.imageUrl} width="150" height="100" />
             <p>{item.description}</p>
         </>
-    );
+    ); 
 };
