@@ -1,8 +1,15 @@
 import './Button.css'
 import PropTypes from 'prop-types';
 
-export const Button = ({ text }) => <button className="Button">{text}</button>;
+export const Button = ({ text, clickFn }) => (
+    <button className="Button" onClick={clickFn}>
+        {text}
+    </button>  
+);
+    
+
 
 Button.propTypes = {
-    text: PropTypes.string
+    text: PropTypes.string,
+    clickFn: PropTypes.func
 };
