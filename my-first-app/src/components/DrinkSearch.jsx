@@ -9,7 +9,7 @@ export const DrinkSearch = ({ clickFn }) => {
     
     return (
         <>
-            <label><b>Search for your drink:</b><br></br></label>
+            <label><h2>Search for your drink:</h2></label>
             <TextInput />
             <DrinkList drinks={availableDrinks} clickFn={clickFn} />
         </>       
