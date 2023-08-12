@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css';
+import { Heading, Flex } from '@chakra-ui/react'
 import { DrinkChoice } from './components/DrinkChoice';
 import { DrinkSearch } from './components/DrinkSearch';
 
@@ -8,16 +8,18 @@ export const App = () => {
   const [userDrink, setUserDrink] = useState();
       
   return (
-    <div className="App"> 
+    <Flex direction='column' alignItems='center'> 
       {userDrink ? (
         <DrinkChoice drink={userDrink} clickFn={setUserDrink} />
       ) : (
           <>
-            <h1>{greeting}</h1>
+            <Heading my={5} fontSize='3xl' color='purple.800'>
+              {greeting}
+            </Heading>
             <DrinkSearch clickFn={setUserDrink} />
           </>
       )}
-    </div>
+    </Flex>
   );
 };
 
