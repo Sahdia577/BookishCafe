@@ -8,15 +8,15 @@ export const App = () => {
   const [userDrink, setUserDrink] = useState();
       
   return (
-    <Flex direction='column' alignItems='center'> 
+    <Flex direction='column' alignItems='center' mt='5em'> 
       {userDrink ? (
-        <DrinkChoice drink={userDrink} clickFn={setUserDrink} />
+        <DrinkChoice drink={userDrink} onClick={setUserDrink} />
       ) : (
           <>
             <Heading my={5} fontSize='3xl' color='purple.800'>
               {greeting}
             </Heading>
-            <DrinkSearch clickFn={setUserDrink} />
+            <DrinkSearch onClick={setUserDrink} />
           </>
       )}
     </Flex>

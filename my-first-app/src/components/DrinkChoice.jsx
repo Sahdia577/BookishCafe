@@ -16,7 +16,7 @@ import {
   useDisclosure
 } from '@chakra-ui/react'
 
-export const DrinkChoice = ({ drink, clickFn }) => {
+export const DrinkChoice = ({ drink, onClick }) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
     return (
@@ -43,7 +43,7 @@ export const DrinkChoice = ({ drink, clickFn }) => {
             Confirm order
           </Button>
           <Button
-            onClick={() => clickFn()}
+            onClick={() => onClick()}
             variant='ghost'
             w={200}
             color='green'
@@ -86,5 +86,5 @@ export const DrinkChoice = ({ drink, clickFn }) => {
 
 DrinkChoice.propTypes = {
   drink: PropTypes.object,
-  clickFn: PropTypes.func
+  onClick: PropTypes.func
 };

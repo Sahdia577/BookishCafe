@@ -1,15 +1,14 @@
 import PropTypes from 'prop-types';
 import { Button as CButton } from '@chakra-ui/react'
 
-export const Button = ({ clickFn, ...props }) => (
-    <CButton onClick={clickFn} {...props}>
+export const Button = ({ onClick, ...props }) => (
+    <CButton onClick={onClick} {...props}>
         {props.children}
     </CButton>  
 );
     
-
 Button.propTypes = {
     text: PropTypes.string,
-    clickFn: PropTypes.func,
+    onClick: PropTypes.func,
     children: PropTypes.children
 };
