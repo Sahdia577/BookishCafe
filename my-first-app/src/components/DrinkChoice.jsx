@@ -52,12 +52,18 @@ export const DrinkChoice = ({ drink, clickFn }) => {
             </Button>
         </Flex>
 
-        <Modal isOpen={isOpen} onClose={onClose}>
+        <Modal isOpen={isOpen} size={['full', 'md']} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>Confirm your order</ModalHeader>
           <ModalCloseButton />
-          <ModalBody>
+            <ModalBody
+              height={['full', 'fit-content']}
+              display='flex'
+              justifyContent='center'
+              alignItems={['center', 'flex-start']}
+              flexDir='column'
+            >
               <Text color='pink.900'>1x {drink.name}</Text>
           </ModalBody>
 
