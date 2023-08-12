@@ -58,11 +58,11 @@ export const DrinkChoice = ({ drink, clickFn }) => {
           <ModalHeader>Confirm your order</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-              <Text>1x {drink.name}</Text>
+              <Text color='pink.900'>1x {drink.name}</Text>
           </ModalBody>
 
           <ModalFooter>
-            <Button colorScheme='pink' mr={3} onClick={onClose}>
+            <Button colorScheme='green' mr={3} onClick={onClose}>
               Confirm
             </Button>
               <Button variant='ghost'>
